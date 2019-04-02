@@ -1,7 +1,8 @@
-- name: Hello World Sample
-  hosts: all
+---
+- hosts: appserver
+  user: ansible
+  become: yes
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+  - name: Install HTTPD
+    yum: name=httpd state=present
 
