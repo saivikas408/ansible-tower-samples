@@ -1,7 +1,6 @@
 ---
 - hosts: 3.210.92.28
   user: ansible
-  gather_facts: true
   become: yes
   tasks:
   - name: Install HTTPD
