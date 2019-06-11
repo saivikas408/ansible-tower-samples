@@ -1,8 +1,8 @@
 ---
-- hosts: 3.210.92.28
+- hosts: appserver
   user: ansible
   become: yes
   tasks:
-  - name: Install HTTPD
-    yum: name=httpd state=present
+  - name: echo
+    shell: echo "Hello World, VIKAS !"
 
