@@ -1,5 +1,5 @@
 ---
-- hosts: appserver
+- hosts: 3.210.92.28
   user: ansible
   become: yes
   tasks:
